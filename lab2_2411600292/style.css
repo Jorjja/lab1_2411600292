@@ -1,0 +1,130 @@
+/* Main Content Styles */
+main {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0 8px 0 10px;
+    border-top: 3px solid #2980b9;
+}
+
+section {
+    background-color: #d4e6f1;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2980b9;
+}
+
+section h2 {
+    color: #1a5276;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e67e22;
+}
+
+/* Custom Classes */
+.highlight {
+    background-color: #eef2f5;
+    font-weight: bold;
+}
+
+.project-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #d4e6f1;
+    margin-bottom: 10px;
+}
+
+.project-item h3 {
+    color: #2980b9;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e67e22;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #d35400;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f3f5;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #1a5276;
+    color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px 0;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2980b9;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1a5276;
+}
+
+/* Aside Styles */
+aside {
+    background-color: #e8f4f8;
+    padding: 20px;
+    margin-top: 20px;
+    border-left: 4px solid #1a5276;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a5276;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 0 0 8px 8px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: square;
+    padding-left: 25px;
+}
+
+ul li {
+    margin: 5px 0;
+    color: #2c3e50;
+}
