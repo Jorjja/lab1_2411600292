@@ -1,0 +1,140 @@
+:root {
+    --primary: #0d47a1;
+    --secondary: #1976d2;
+    --accent: #ffc107;
+    --bg-light: #f0f4f8;
+    --text-dark: #1e293b;
+    --card-bg: #ffffff;
+    --success: #10b981;
+    --danger: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+}
+
+.login-wrapper {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    min-height: 100vh;
+}
+
+.login-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.theme-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 1.25rem;
+}
+
+.login-card .card-body {
+    background-color: var(--card-bg);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.navbar {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%) !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.nav-link:hover {
+    color: white !important;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.stat-card .card-title {
+    color: #64748b;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card .card-text {
+    color: var(--primary);
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+.sidebar {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.table thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+.greeting-box {
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+    .stat-card .card-text {
+        font-size: 1.8rem;
+    }
+
+    .greeting-box {
+        padding: 1rem;
+    }
+}
