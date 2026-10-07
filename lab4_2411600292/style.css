@@ -1,0 +1,62 @@
+:root {
+    --primary: #0d47a1;
+    --secondary: #1976d2;
+    --accent: #ffc107;
+    --bg-light: #f5f7fa;
+}
+
+body {
+    background-color: var(--bg-light);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.login-wrapper {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    min-height: 100vh;
+}
+
+.theme-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.navbar {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%) !important;
+}
+
+.greeting-box {
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    border-left: 4px solid var(--primary);
+}
+
+.table thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+canvas {
+    max-height: 280px;
+    width: 100% !important;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
