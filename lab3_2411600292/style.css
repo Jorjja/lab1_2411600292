@@ -1,0 +1,182 @@
+:root {
+    --primary: #0d5c3e;
+    --secondary: #1a936f;
+    --accent: #f3a712;
+    --bg-light: #f0f7f4;
+    --text-dark: #1a2e24;
+    --card-light: #d4ece4;
+    --success: #10b981;
+    --danger: #ef4444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+}
+
+.login-wrapper {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    min-height: 100vh;
+}
+
+.login-card {
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(13, 92, 62, 0.25);
+}
+
+.theme-header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.theme-header h2 {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.login-card .card-body {
+    background-color: white;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+.navbar {
+    background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%) !important;
+    box-shadow: 0 3px 10px rgba(13, 92, 62, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: white !important;
+}
+
+.nav-link {
+    color: rgba(255,255,255,0.9) !important;
+}
+
+.nav-link:hover {
+    color: var(--accent) !important;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 4px 15px rgba(13, 92, 62, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid var(--primary);
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(13, 92, 62, 0.15);
+}
+
+.stat-card.goal-met {
+    border-left-color: var(--success);
+}
+
+.stat-card.goal-pending {
+    border-left-color: var(--accent);
+}
+
+.stat-card.goal-missed {
+    border-left-color: var(--danger);
+}
+
+.stat-card .card-title {
+    color: #52796f;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.stat-card .card-text {
+    color: var(--primary);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.greeting-box {
+    background: linear-gradient(90deg, var(--secondary) 0%, var(--primary) 100%);
+    color: white;
+    padding: 1.75rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+}
+
+.greeting-box p {
+    opacity: 0.9;
+}
+
+.table {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(13, 92, 62, 0.06);
+}
+
+.table thead {
+    background-color: var(--primary);
+    color: white;
+}
+
+.badge.bg-success {
+    background-color: var(--success) !important;
+}
+
+.badge.bg-warning {
+    background-color: var(--accent) !important;
+    color: #212529 !important;
+}
+
+.badge.bg-danger {
+    background-color: var(--danger) !important;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+    background-color: #e0e7e2;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--secondary), var(--success));
+    border-radius: 5px;
+}
+
+.btn-outline-light:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: var(--text-dark) !important;
+}
+
+@media (max-width: 768px) {
+    .stat-card .card-text {
+        font-size: 1.6rem;
+    }
+    .greeting-box {
+        padding: 1.25rem;
+    }
+}
